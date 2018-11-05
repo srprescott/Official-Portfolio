@@ -128,28 +128,8 @@
     padding: 10px 0;
 }
 
-.slide-button{
-    border: none;
-    background-color:#DCD0C0;
-    -webkit-box-shadow: 2px 2px 2px #373737;
-    box-shadow: 2px 2px 2px #373737;
-}
-
-.slide-button:hover{
-    background-color:#373737;
-}
-
-.slide-left{
-    border-radius: 5px 0 0 5px;
-}
-
-.slide-right{
-    border-radius: 0 5px 5px 0;
-}
-
-.mySlides{
-    -webkit-box-shadow: 2px 2px 2px #373737;
-    box-shadow: 2px 2px 2px #373737;
+.gallery{
+    border: 5px solid #DCD0C0;
 }
 
 .pricing-list{

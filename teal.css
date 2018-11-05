@@ -139,28 +139,8 @@
     text-shadow: 2px 2px 2px black;
 }
 
-.slide-button{
-    border: none;
-    background-color:#17252A;
-    -webkit-box-shadow: 2px 2px 2px black;
-    box-shadow: 2px 2px 2px black;
-}
-
-.slide-button:hover{
-    background-color:#2B7A78;
-}
-
-.slide-left{
-    border-radius: 5px 0 0 5px;
-}
-
-.slide-right{
-    border-radius: 0 5px 5px 0;
-}
-
-.mySlides{
-    -webkit-box-shadow: 2px 2px 2px black;
-    box-shadow: 2px 2px 2px black;
+.gallery{
+    border: 5px solid #2B7A78;
 }
 
 .pricing-list{

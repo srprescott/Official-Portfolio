@@ -24,29 +24,6 @@
     
    
     <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            if (n > x.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = x.length
-            };
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[slideIndex - 1].style.display = "block";
-        }
-    </script>
-    <script>
         
          //   MMMMMMMMMMMMMMMMMMMMMMM STYLE BUTTONS MMMMMMMMMMMMMMMMMMMMMMMM
         function muted() {
@@ -210,21 +187,18 @@
                            <h3 class="sub-h h-center">It has been a great experience designing, building, and maintaining these websites. Some of these I built for businesses, some for friends and family, and some just for fun and practice. The one I am most proud of is the website I designed, built, and donated to a local non-profit.
                            <br>
                            <br> I've included some of my much older practice sites in this list, because I think it's important to showcase how skills grow and change over time. </h3>
-                            <p class="projects-blurb">
-                            </p>
-                            <div class="img-slide">
-                                <input type="submit" value="&#10094;" class="slide-button slide-left" onclick="plusDivs(-1)">
-                                <div class="portfolio">
-                                    <a href="http://www.buyyak.com" target="_blank"><img class="mySlides" src="images/portfolio/yak.png" /></a>
-                                    <a href="http://www.sequelglass.com" target="_blank"><img class="p-link mySlides" src="images/portfolio/sg.png"/></a>
-                                    <a href="https://srprescott.github.io/Pet-Rescue/index.html"><img class="p-link mySlides" src="images/portfolio/pet-rescue.png"></a>
-                                    <a href="http://www.reverepowerpackprogram.com" target="_blank"><img class="p-link mySlides" src="images/portfolio/rppp.png" /></a>
-                                    <a href="https://srprescott.github.io/Florist-Shop/index.html" target="_blank"><img class="p-link mySlides" src="images/portfolio/flower-shop.png" /></a>
-                                    <a href="http://www.rachelsbabyshower.xyz" target="_blank"><img class="p-link mySlides" src="images/portfolio/rs.png" /></a>
+                           
+                                
+                            <div class="portfolio">
+                                <a href="http://www.buyyak.com" target="_blank"><img class="gallery" src="images/portfolio/yak.png" /></a>
+                                <a href="http://www.sequelglass.com" target="_blank"><img class="gallery" src="images/portfolio/sg.png"/></a>
+                                <a href="https://srprescott.github.io/Pet-Rescue/index.html"><img class="gallery" src="images/portfolio/pet-rescue.png"></a>
+                                <a href="http://www.reverepowerpackprogram.com" target="_blank"><img class="gallery" src="images/portfolio/rppp.png" /></a>
+                                <a href="https://srprescott.github.io/Florist-Shop/index.html" target="_blank"><img class="gallery" src="images/portfolio/flower-shop.png" /></a>
+                                <a href="http://www.rachelsbabyshower.xyz" target="_blank"><img class="gallery" src="images/portfolio/rs.png" /></a>
                                     
-                                </div>
-                                <input type="submit" value="&#10095;" class="slide-button slide-right" onclick="plusDivs(1)">
                             </div>
+                                
                             <div class="flow-buttons">
                                 <button class="button list-bubble" onclick="projectsBack()">&#10094; Skills</button>
                                 <button class="button list-bubble" onclick="projectsForward()">Services &#10095;</button>

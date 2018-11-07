@@ -299,6 +299,7 @@ header{
     position: absolute;
     -webkit-animation: enlarge 2s forwards;
     animation: enlarge 2s forwards;
+    z-index: 9;
 }
 
 

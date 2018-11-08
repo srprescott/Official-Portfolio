@@ -294,7 +294,7 @@ footer{
         align-items: center;
         text-align: center;
     }
-    .mySlides, .img-slide, .main, .section-one{
+    .main, .section-one{
         padding:0;
         margin:0;
         max-width: 100%;
@@ -327,7 +327,10 @@ footer{
         -ms-flex-direction: row;
         flex-direction: row;
     }
-    
+    .gallery{
+        max-width:100%;
+        border:none;
+    }
 }
 
 @media screen and (max-width:640px) {
@@ -382,7 +385,7 @@ footer{
         align-items: center;
         text-align: center;
     }
-    .mySlides, .img-slide, .main, .section-one{
+    .main, .section-one{
         padding:0;
         margin:0;
         max-width: 100%;
@@ -416,7 +419,10 @@ footer{
         flex-direction: row;
         
     }
-    
+    .gallery{
+        max-width:100%;
+        border:none;
+    }
 }
 
 @media screen and (max-width:360px) {
@@ -470,7 +476,7 @@ footer{
         align-items: center;
         text-align: center;
     }
-    .mySlides, .img-slide, .main, .section-one{
+    .main, .section-one{
         padding:0;
         margin:0;
         max-width: 100%;
@@ -504,7 +510,10 @@ footer{
         flex-direction: row;
         
     }
-    
+    .gallery{
+        max-width:100%;
+        border:none;
+    }
 }
 
 @media screen and (max-width:320px) {
@@ -558,7 +567,7 @@ footer{
         align-items: center;
         text-align: center;
     }
-    .mySlides, .img-slide, .main, .section-one{
+    .main, .section-one{
         padding:0;
         margin:0;
         max-width: 100%;
@@ -590,5 +599,8 @@ footer{
         -ms-flex-direction: row;
         flex-direction: row;
     }
-    
+    .gallery{
+        max-width:100%;
+        border:none;
+    }
 }

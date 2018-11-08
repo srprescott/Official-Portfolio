@@ -7,7 +7,7 @@
     <title>Prescott Web Development</title>
     <link rel="stylesheet" href="official.css" id="sheet">
     <link rel="stylesheet" href="animations.min.css" id="elements">
-    <link rel="stylesheet" href="original.css" id="style">
+    <link rel="stylesheet" href="teal.css" id="style">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
@@ -95,6 +95,38 @@
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
+        
+        function bigImgOne() {
+            el = document.querySelector(".img-one").src;
+            document.getElementById("grow").src = el;
+        }
+        
+        function bigImgTwo() {
+            el = document.querySelector(".img-two").src;
+            document.getElementById("grow").src = el;
+        }
+        
+        function bigImgThree() {
+            el = document.querySelector(".img-three").src;
+            document.getElementById("grow").src = el;
+        }
+        
+        function bigImgFour() {
+            el = document.querySelector(".img-four").src;
+            document.getElementById("grow").src = el;
+        }
+        
+        function bigImgFive() {
+            el = document.querySelector(".img-five").src;
+            document.getElementById("grow").src = el;
+        }
+        
+        function bigImgSix() {
+            el = document.querySelector(".img-six").src;
+            document.getElementById("grow").src = el;
+        }
+        
+        
     </script>
 </head>
 
@@ -188,14 +220,18 @@
                            <br>
                            <br> I've included some of my much older practice sites in this list, because I think it's important to showcase how skills grow and change over time. </h3>
                            
+                           <div class="big-image">
+                               <img class="hidden-image" id="grow" src="">
+                           </div>
+                           
                                 
                             <div class="portfolio">
-                                <a href="http://www.buyyak.com" target="_blank"><img class="gallery" src="images/portfolio/yak.png" /></a>
-                                <a href="http://www.sequelglass.com" target="_blank"><img class="gallery" src="images/portfolio/sg.png"/></a>
-                                <a href="https://srprescott.github.io/Pet-Rescue/index.html"><img class="gallery" src="images/portfolio/pet-rescue.png"></a>
-                                <a href="http://www.reverepowerpackprogram.com" target="_blank"><img class="gallery" src="images/portfolio/rppp.png" /></a>
-                                <a href="https://srprescott.github.io/Florist-Shop/index.html" target="_blank"><img class="gallery" src="images/portfolio/flower-shop.png" /></a>
-                                <a href="http://www.rachelsbabyshower.xyz" target="_blank"><img class="gallery" src="images/portfolio/rs.png" /></a>
+                                <a href="http://www.buyyak.com" target="_blank"><img class="gallery img-one" onmouseover="bigImgOne()" src="images/portfolio/yak.png" alt="Buy Yak"/></a>
+                                <a href="http://www.sequelglass.com" target="_blank"><img class="gallery img-two" onmouseover="bigImgTwo()" src="images/portfolio/sg.png" alt="Sequel Glass"/></a>
+                                <a href="https://srprescott.github.io/Pet-Rescue/index.html"><img class="gallery img-three" onmouseover="bigImgThree()" src="images/portfolio/pet-rescue.png" alt="Pet Rescue"></a>
+                                <a href="http://www.reverepowerpackprogram.com" target="_blank"><img class="gallery img-four" onmouseover="bigImgFour()" src="images/portfolio/rppp.png" alt="Revere Power Pack Program" /></a>
+                                <a href="https://srprescott.github.io/Florist-Shop/index.html" target="_blank"><img class="gallery img-five" onmouseover="bigImgFive()" src="images/portfolio/flower-shop.png" alt="Florist Shop" /></a>
+                                <a href="http://www.rachelsbabyshower.xyz" target="_blank"><img class="gallery img-six" onmouseover="bigImgSix()" src="images/portfolio/rs.png" alt="Baby Shower" /></a>
                                     
                             </div>
                                 

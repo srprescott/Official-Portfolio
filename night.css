@@ -297,7 +297,7 @@ footer{
         align-items: center;
         text-align: center;
     }
-    .mySlides, .img-slide, .main, .section-one{
+    .main, .section-one{
         padding:0;
         margin:0;
         max-width: 100%;
@@ -335,6 +335,10 @@ footer{
     }
     .skills-animate-in, .skills-block{
         width: 100%;
+    }
+    .gallery{
+        max-width:100%;
+        border:none;
     }
 }
 
@@ -390,7 +394,7 @@ footer{
         align-items: center;
         text-align: center;
     }
-    .mySlides, .img-slide, .main, .section-one{
+    .main, .section-one{
         padding:0;
         margin:0;
         max-width: 100%;
@@ -428,6 +432,10 @@ footer{
     }
     .skills-animate-in{
         width: 100%;
+    }
+    .gallery{
+        max-width:100%;
+        border:none;
     }
 }
 
@@ -482,7 +490,7 @@ footer{
         align-items: center;
         text-align: center;
     }
-    .mySlides, .img-slide, .main, .section-one{
+    .main, .section-one{
         padding:0;
         margin:0;
         max-width: 100%;
@@ -520,6 +528,10 @@ footer{
     }
     .skills-animate-in{
         width: 100%;
+    }
+    .gallery{
+        max-width:100%;
+        border:none;
     }
 }
 
@@ -574,7 +586,7 @@ footer{
         align-items: center;
         text-align: center;
     }
-    .mySlides, .img-slide, .main, .section-one{
+    .main, .section-one{
         padding:0;
         margin:0;
         max-width: 100%;
@@ -610,5 +622,9 @@ footer{
     }
     .skills-animate-in{
         width: 100%;
+    }
+    .gallery{
+        max-width:100%;
+        border:none;
     }
 }

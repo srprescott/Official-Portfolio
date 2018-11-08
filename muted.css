@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
 
 .main{
-    margin: 3% 15%;
+    margin: 4% 15%;
 }
 
 .row{
@@ -26,7 +26,7 @@
 }
 
 .about{
-    padding: 3% 0;
+    padding: 0;
 }
 
 .intro{

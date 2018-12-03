@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Prescott Web Development</title>
     <link rel="stylesheet" href="official.css" id="sheet">
+    <link rel="stylesheet" href="animations.min.css" id="elements">
     <link rel="stylesheet" href="teal.css" id="style">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -52,7 +53,48 @@
         
         
         
-        
+        //   MMMMMMMMMMMMMMMMMMMMMMM ELEMENT BUTTONS MMMMMMMMMMMMMMMMMMMMMMM 
+        function aboutForward() {
+            document.querySelector(".about-animate-in").className = "about-dead";
+            document.querySelector('.skills-dead').className = "skills-animate-in";
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        function skillsBack() {
+            document.querySelector(".skills-animate-in").className = "skills-dead";
+            document.querySelector('.about-dead').className = "about-animate-in";
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        function skillsForward() {
+            document.querySelector(".skills-animate-in").className = "skills-dead";
+            document.querySelector('.projects-dead').className = "projects-animate-in";
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        function projectsBack() {
+            document.querySelector(".projects-animate-in").className = "projects-dead";
+            document.querySelector('.skills-dead').className = "skills-animate-in";
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        function projectsForward() {
+            document.querySelector(".projects-animate-in").className = "projects-dead";
+            document.querySelector('.pricing-dead').className = "pricing-animate-in";
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        function pricingBack() {
+            document.querySelector(".pricing-animate-in").className = "pricing-dead";
+            document.querySelector('.projects-dead').className = "projects-animate-in";
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
         
         function bigImgOne() {
             el = document.querySelector(".img-one").src;
@@ -132,7 +174,9 @@
                                     </h3> 
                                 </div>
                             </div>
-                            
+                            <div class="about-buttons">
+                                <button class="button list-bubble" onclick="aboutForward()">Skills &#10095;</button>
+                            </div>
                         </div>
                         
                         <!-- ////////////////////// SKILLS ////////////////////// -->
@@ -162,7 +206,10 @@
                                     <dd class="list">The value of time well spent is incalculable. As such, I understand how important your time is and I put a high priority on not wasting any of my clients time. I believe strongly in making and keeping realistic time tables during the development process. </dd>
                                 </dl>
                             </div>
-                            
+                            <div class="flow-buttons">
+                                <button class="button list-bubble" onclick="skillsBack()">&#10094; About</button>
+                                <button class="button list-bubble" onclick="skillsForward()">Projects &#10095;</button>
+                            </div>
                         </div>
                         
                         <!-- ////////////////////// PROJECTS ////////////////////// -->
@@ -188,6 +235,10 @@
                                     
                             </div>
                                 
+                            <div class="flow-buttons">
+                                <button class="button list-bubble" onclick="projectsBack()">&#10094; Skills</button>
+                                <button class="button list-bubble" onclick="projectsForward()">Services &#10095;</button>
+                            </div>
                         </div>
                         
                         <!-- ////////////////////// PRICING ////////////////////// -->
@@ -235,7 +286,9 @@
                                     
                                 </div>
                             </div>
-                            
+                            <div class="pricing-buttons">
+                                <button class="button list-bubble" onclick="pricingBack()">&#10094; Projects</button>
+                            </div>
                         </div>
                         
                     </div>

@@ -266,6 +266,7 @@ footer{
         padding: 10px 0;
     }
     .about-blurb, .blurb-about, .night-pic{
+        padding: 0;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;

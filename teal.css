@@ -288,6 +288,10 @@ footer{
         -ms-flex-pack: center;
         justify-content: center;
     }
+    .gallery{
+        max-width:100%;
+        border:none;
+    }
 }
 @media screen and (max-width:959px) {
     .container-fluid {

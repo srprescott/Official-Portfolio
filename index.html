@@ -55,47 +55,69 @@
         
         
         //   MMMMMMMMMMMMMMMMMMMMMMM ELEMENT BUTTONS MMMMMMMMMMMMMMMMMMMMMMM 
-        function aboutForward() {
-            document.querySelector(".about-animate-in").className = "about-dead";
-            document.querySelector('.skills-dead').className = "skills-animate-in";
+        
+        
+        var aboutVar = document.getElementById("about");
+        var skillsVar = document.querySelector(".skills");
+        var projectsVar = document.querySelector(".projects");
+        var servicesVar = document.querySelector(".services");
+        
+        
+        function about() {
+            
+            
+            if (aboutVar.className === "about-dead") {
+                document.querySelector(".skills-animate-in").className = "skills-dead";
+                document.querySelector(".project-animate-in").className = "project-dead";
+                document.querySelector(".pricing-animate-in").className = "pricing-dead";
+                document.querySelector('.about-dead').className = "about-animate-in";
+                }
+            
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
 
-        function skillsBack() {
-            document.querySelector(".skills-animate-in").className = "skills-dead";
-            document.querySelector('.about-dead').className = "about-animate-in";
+        
+
+        function skills() {
+            if (skillsVar.className === "skills-dead") {
+                document.querySelector(".about-animate-in").className = "about-dead";
+                document.querySelector(".project-animate-in").className = "project-dead";
+                document.querySelector(".pricing-animate-in").className = "pricing-dead";
+                document.querySelector('.skills-dead').className = "skills-animate-in";
+                }
+            
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
 
-        function skillsForward() {
-            document.querySelector(".skills-animate-in").className = "skills-dead";
-            document.querySelector('.projects-dead').className = "projects-animate-in";
+        
+
+        function projects() {
+            if (skillsVar.className === "skills-dead") {
+                document.querySelector(".about-animate-in").className = "about-dead";
+                document.querySelector(".project-animate-in").className = "project-dead";
+                document.querySelector(".pricing-animate-in").className = "pricing-dead";
+                document.querySelector('.skills-dead').className = "skills-animate-in";
+                }
+            
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
 
-        function projectsBack() {
-            document.querySelector(".projects-animate-in").className = "projects-dead";
-            document.querySelector('.skills-dead').className = "skills-animate-in";
+        function services() {
+            if (skillsVar.className === "skills-dead") {
+                document.querySelector(".about-animate-in").className = "about-dead";
+                document.querySelector(".project-animate-in").className = "project-dead";
+                document.querySelector(".pricing-animate-in").className = "pricing-dead";
+                document.querySelector('.skills-dead').className = "skills-animate-in";
+                }
+            
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
-
-        function projectsForward() {
-            document.querySelector(".projects-animate-in").className = "projects-dead";
-            document.querySelector('.pricing-dead').className = "pricing-animate-in";
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        }
-
-        function pricingBack() {
-            document.querySelector(".pricing-animate-in").className = "pricing-dead";
-            document.querySelector('.projects-dead').className = "projects-animate-in";
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        }
+        
+        
         
         function bigImgOne() {
             el = document.querySelector(".img-one").src;
@@ -140,7 +162,20 @@
                     <header class="intro">
                         <div class="site-info">
                             <h1 class="main-h">Sara R Prescott</h1>
-                            <h2 class="main-sub">Stunning, Responsive Websites</h2> </div>
+                            <h2 class="main-sub">Stunning, Responsive Websites</h2> 
+                            
+                            <div class="nav-buttons">
+                              
+                               <button class="button list-bubble" onclick="about()">About &#10095;</button>
+                               
+                                <button class="button list-bubble" onclick="skills()">Skills &#10095;</button>
+                               
+                                <button class="button list-bubble" onclick="projects()">Projects &#10095;</button>
+                                
+                                <button class="button list-bubble" onclick="services()">Services &#10095;</button>
+                                
+                            </div>
+                        </div>
                         
                         <div class="style-bubbles">
                             <h3 class="sub-h h-center">Want to pick a new style?</h3>
@@ -158,7 +193,7 @@
                     <!-- ////////////////////// ABOUT ////////////////////// -->
                     
                     <div class="section-one">
-                        <div class="about about-animate-in">
+                        <div class="about-animate-in" id="about">
                             <div class="about-blurb"> 
                                 <img class="portrait original-pic" src="images/web-developer.jpg" alt="Sara Prescott, Web Developer">
                                 <img class="portrait muted-pic" src="images/muted.png" alt="Sara Prescott, Web Developer">
@@ -176,13 +211,13 @@
                                 </div>
                             </div>
                             <div class="about-buttons">
-                                <button class="button list-bubble" onclick="aboutForward()">Skills &#10095;</button>
+                                
                             </div>
                         </div>
                         
                         <!-- ////////////////////// SKILLS ////////////////////// -->
                         
-                        <div class="skills skills-dead">
+                        <div class="skills-dead" id="skills">
                             <h2 class="intro-h">Some of my skills...</h2>
                             <div class="skills-blurb">
                                 <h3 class="sub-h">In web development, I am currently proficient with:</h3>
@@ -208,43 +243,43 @@
                                 </dl>
                             </div>
                             <div class="flow-buttons">
-                                <button class="button list-bubble" onclick="skillsBack()">&#10094; About</button>
-                                <button class="button list-bubble" onclick="skillsForward()">Projects &#10095;</button>
+                                
                             </div>
                         </div>
                         
                         <!-- ////////////////////// PROJECTS ////////////////////// -->
                         
-                        <div class="projects projects-dead">
-                           <h2 class="intro-h">Some of my projects so far...</h2>
-                           <h3 class="sub-h h-center">It has been a great experience designing, building, and maintaining these websites. Some of these I built for businesses, some for friends and family, and some just for fun and practice. The one I am most proud of is the website I designed, built, and donated to a local non-profit.
-                           <br>
-                           <br> I've included some of my much older practice sites in this list, because I think it's important to showcase how skills grow and change over time. </h3>
-                           
-                           <div class="big-image">
-                               <img class="hidden-image" id="grow" src="">
-                           </div>
-                           
-                                
-                            <div class="portfolio">
-                                <a href="http://www.buyyak.com" target="_blank"><img class="gallery img-one" onmouseover="bigImgOne()" src="images/portfolio/yak.png" alt="Buy Yak"/></a>
-                                <a href="http://www.sequelglass.com" target="_blank"><img class="gallery img-two" onmouseover="bigImgTwo()" src="images/portfolio/sg.png" alt="Sequel Glass"/></a>
-                                <a href="https://srprescott.github.io/Pet-Rescue/index.html"><img class="gallery img-three" onmouseover="bigImgThree()" src="images/portfolio/pet-rescue.png" alt="Pet Rescue"></a>
-                                <a href="http://www.reverepowerpackprogram.com" target="_blank"><img class="gallery img-four" onmouseover="bigImgFour()" src="images/portfolio/rppp.png" alt="Revere Power Pack Program" /></a>
-                                <a href="https://srprescott.github.io/Florist-Shop/index.html" target="_blank"><img class="gallery img-five" onmouseover="bigImgFive()" src="images/portfolio/flower-shop.png" alt="Florist Shop" /></a>
-                                <a href="http://www.rachelsbabyshower.xyz" target="_blank"><img class="gallery img-six" onmouseover="bigImgSix()" src="images/portfolio/rs.png" alt="Baby Shower" /></a>
-                                    
-                            </div>
-                                
-                            <div class="flow-buttons">
-                                <button class="button list-bubble" onclick="projectsBack()">&#10094; Skills</button>
-                                <button class="button list-bubble" onclick="projectsForward()">Services &#10095;</button>
+                        <div class="projects-dead" id="projects">
+                           <div class="projects-block">
+                               <h2 class="intro-h">Some of my projects so far...</h2>
+                               <h3 class="sub-h h-center">It has been a great experience designing, building, and maintaining these websites. Some of these I built for businesses, some for friends and family, and some just for fun and practice. The one I am most proud of is the website I designed, built, and donated to a local non-profit.
+                               <br>
+                               <br> I've included some of my much older practice sites in this list, because I think it's important to showcase how skills grow and change over time. </h3>
+
+                               <div class="big-image">
+                                   <img class="hidden-image" id="grow" src="">
+                               </div>
+
+
+                                <div class="portfolio">
+                                    <a href="http://www.buyyak.com" target="_blank"><img class="gallery img-one" onmouseover="bigImgOne()" src="images/portfolio/yak.png" alt="Buy Yak"/></a>
+                                    <a href="http://www.sequelglass.com" target="_blank"><img class="gallery img-two" onmouseover="bigImgTwo()" src="images/portfolio/sg.png" alt="Sequel Glass"/></a>
+                                    <a href="https://srprescott.github.io/Pet-Rescue/index.html"><img class="gallery img-three" onmouseover="bigImgThree()" src="images/portfolio/pet-rescue.png" alt="Pet Rescue"></a>
+                                    <a href="http://www.reverepowerpackprogram.com" target="_blank"><img class="gallery img-four" onmouseover="bigImgFour()" src="images/portfolio/rppp.png" alt="Revere Power Pack Program" /></a>
+                                    <a href="https://srprescott.github.io/Florist-Shop/index.html" target="_blank"><img class="gallery img-five" onmouseover="bigImgFive()" src="images/portfolio/flower-shop.png" alt="Florist Shop" /></a>
+                                    <a href="http://www.rachelsbabyshower.xyz" target="_blank"><img class="gallery img-six" onmouseover="bigImgSix()" src="images/portfolio/rs.png" alt="Baby Shower" /></a>
+
+                                </div>
+
+                                <div class="flow-buttons">
+
+                                </div>
                             </div>
                         </div>
                         
                         <!-- ////////////////////// PRICING ////////////////////// -->
                         
-                        <div class="pricing pricing-dead">
+                        <div class="services-dead" id="services">
                             <div class="pricing-blurb">
                                 <h2 class="intro-h">Pricing Structure</h2>
                                 <h3 class="sub-h">Websites creation is priced at a flat rate. The rate will depend on some very important factors, including (but not limited to):</h3>
@@ -288,7 +323,7 @@
                                 </div>
                             </div>
                             <div class="pricing-buttons">
-                                <button class="button list-bubble" onclick="pricingBack()">&#10094; Projects</button>
+                                
                             </div>
                         </div>
                         

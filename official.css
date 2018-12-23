@@ -125,7 +125,7 @@ header{
 
 /*///////////////ABOUT////////////////*/
 
-.about{
+#about{
     height: 100%;
     width: 100%;
     display: -webkit-box;
@@ -197,7 +197,7 @@ header{
 
 /*///////////////SKILLS////////////////*/
 
-.skills{
+#skills{
     width: 100%;
 }
 
@@ -253,7 +253,11 @@ header{
 
 /*///////////////PROJECTS///////////////*/
 
-.projects{
+#projects{
+    width: 100%;
+}
+
+.projects-block{
     margin: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -307,8 +311,8 @@ header{
 
 /*///////////////PRICING////////////////*/
 
-.pricing{
-    display: block;
+#services{
+    width: 100%;
 }
 
 .element{

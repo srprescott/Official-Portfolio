@@ -57,21 +57,17 @@
         //   MMMMMMMMMMMMMMMMMMMMMMM ELEMENT BUTTONS MMMMMMMMMMMMMMMMMMMMMMM 
         
         
-        var aboutVar = document.getElementById("about");
-        var skillsVar = document.querySelector(".skills");
-        var projectsVar = document.querySelector(".projects");
-        var servicesVar = document.querySelector(".services");
+        
         
         
         function about() {
             
             
-            if (aboutVar.className === "about-dead") {
-                document.querySelector(".skills-animate-in").className = "skills-dead";
-                document.querySelector(".project-animate-in").className = "project-dead";
-                document.querySelector(".pricing-animate-in").className = "pricing-dead";
-                document.querySelector('.about-dead').className = "about-animate-in";
-                }
+            document.querySelector('.style-about').style.display = "block";
+            document.querySelector(".style-skills").style.display = "none";
+            document.querySelector(".style-projects").style.display = "none";
+            document.querySelector(".style-services").style.display = "none";
+            
             
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -80,12 +76,12 @@
         
 
         function skills() {
-            if (skillsVar.className === "skills-dead") {
-                document.querySelector(".about-animate-in").className = "about-dead";
-                document.querySelector(".project-animate-in").className = "project-dead";
-                document.querySelector(".pricing-animate-in").className = "pricing-dead";
-                document.querySelector('.skills-dead').className = "skills-animate-in";
-                }
+            
+            document.querySelector('.style-skills').style.display = "block";
+            document.querySelector(".style-about").style.display = "none";
+            document.querySelector(".style-projects").style.display = "none";
+            document.querySelector(".style-services").style.display = "none";
+            
             
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -94,24 +90,24 @@
         
 
         function projects() {
-            if (skillsVar.className === "skills-dead") {
-                document.querySelector(".about-animate-in").className = "about-dead";
-                document.querySelector(".project-animate-in").className = "project-dead";
-                document.querySelector(".pricing-animate-in").className = "pricing-dead";
-                document.querySelector('.skills-dead').className = "skills-animate-in";
-                }
+            
+            document.querySelector('.style-projects').style.display = "block";
+            document.querySelector(".style-skills").style.display = "none";
+            document.querySelector(".style-about").style.display = "none";
+            document.querySelector(".style-services").style.display = "none";
+            
             
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
 
         function services() {
-            if (skillsVar.className === "skills-dead") {
-                document.querySelector(".about-animate-in").className = "about-dead";
-                document.querySelector(".project-animate-in").className = "project-dead";
-                document.querySelector(".pricing-animate-in").className = "pricing-dead";
-                document.querySelector('.skills-dead').className = "skills-animate-in";
-                }
+            
+            document.querySelector('.style-services').style.display = "block";
+            document.querySelector(".style-about").style.display = "none";
+            document.querySelector(".style-projects").style.display = "none";
+            document.querySelector(".style-skills").style.display = "none";
+            
             
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -166,13 +162,13 @@
                             
                             <div class="nav-buttons">
                               
-                               <button class="button list-bubble" onclick="about()">About &#10095;</button>
+                               <button class="button list-bubble" onclick="about()">Home</button>
                                
-                                <button class="button list-bubble" onclick="skills()">Skills &#10095;</button>
+                                <button class="button list-bubble" onclick="skills()">Skills</button>
                                
-                                <button class="button list-bubble" onclick="projects()">Projects &#10095;</button>
+                                <button class="button list-bubble" onclick="projects()">Projects</button>
                                 
-                                <button class="button list-bubble" onclick="services()">Services &#10095;</button>
+                                <button class="button list-bubble" onclick="services()">Services</button>
                                 
                             </div>
                         </div>
@@ -193,7 +189,7 @@
                     <!-- ////////////////////// ABOUT ////////////////////// -->
                     
                     <div class="section-one">
-                        <div class="about-animate-in" id="about">
+                        <div class="about-animate-in style-about" id="about">
                             <div class="about-blurb"> 
                                 <img class="portrait original-pic" src="images/web-developer.jpg" alt="Sara Prescott, Web Developer">
                                 <img class="portrait muted-pic" src="images/muted.png" alt="Sara Prescott, Web Developer">
@@ -217,7 +213,7 @@
                         
                         <!-- ////////////////////// SKILLS ////////////////////// -->
                         
-                        <div class="skills-dead" id="skills">
+                        <div class="skills-dead style-skills" id="skills">
                             <h2 class="intro-h">Some of my skills...</h2>
                             <div class="skills-blurb">
                                 <h3 class="sub-h">In web development, I am currently proficient with:</h3>
@@ -249,7 +245,7 @@
                         
                         <!-- ////////////////////// PROJECTS ////////////////////// -->
                         
-                        <div class="projects-dead" id="projects">
+                        <div class="projects-dead style-projects" id="projects">
                            <div class="projects-block">
                                <h2 class="intro-h">Some of my projects so far...</h2>
                                <h3 class="sub-h h-center">It has been a great experience designing, building, and maintaining these websites. Some of these I built for businesses, some for friends and family, and some just for fun and practice. The one I am most proud of is the website I designed, built, and donated to a local non-profit.
@@ -279,7 +275,7 @@
                         
                         <!-- ////////////////////// PRICING ////////////////////// -->
                         
-                        <div class="services-dead" id="services">
+                        <div class="services-dead style-services" id="services">
                             <div class="pricing-blurb">
                                 <h2 class="intro-h">Pricing Structure</h2>
                                 <h3 class="sub-h">Websites creation is priced at a flat rate. The rate will depend on some very important factors, including (but not limited to):</h3>

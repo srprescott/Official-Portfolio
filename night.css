@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Kurale');
 
 .main{
-    margin: 1% 15%;
+    margin: 2% 15%;
 }
 
 .row{
@@ -86,12 +86,14 @@
 }
 
 .button{
-    height:80px;
-    width:100px;
+    margin-top: 10px;
+    margin-right: 5px;
+    height:40px;
+    width:80px;
     border-radius: 5px;
     background-color: #240090;
     color:white;
-    font-size: 1.2em;
+    font-size: 1em;
     border:none;
     -webkit-box-shadow: 3px 3px 3px black;
     box-shadow: 3px 3px 3px black;

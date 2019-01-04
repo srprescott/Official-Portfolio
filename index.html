@@ -4,7 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Prescott Web Development</title>
+    <title>Responsive Websites - Prescott Web Development | Akron Ohio</title>
+    <meta name="description" content="Need a website? Prescott Web Development provides Responsive Website Design in Akron Ohio, and beyond. We want to make stunning websites you you!">
+    <meta name="keywords" content="Website Design, Website Development, Website, Responsive Design, Mobile, Search Engine Optimization, Akron, Akron Website, Web Developer">
     <link rel="stylesheet" href="official.css" id="sheet">
     <link rel="stylesheet" href="animations.min.css" id="elements">
     <link rel="stylesheet" href="teal.css" id="style">
@@ -64,14 +66,10 @@
         
         
         function about() {
-            
-            
-            if (aboutVar.className === "about-dead") {
-                document.querySelector(".skills-animate-in").className = "skills-dead";
-                document.querySelector(".project-animate-in").className = "project-dead";
-                document.querySelector(".pricing-animate-in").className = "pricing-dead";
-                document.querySelector('.about-dead').className = "about-animate-in";
-                }
+            document.querySelector('.style-about').style.display = "block";
+            document.querySelector(".style-skills").style.display = "none";
+            document.querySelector(".style-projects").style.display = "none";
+            document.querySelector(".style-services").style.display = "none";
             
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -80,12 +78,10 @@
         
 
         function skills() {
-            if (skillsVar.className === "skills-dead") {
-                document.querySelector(".about-animate-in").className = "about-dead";
-                document.querySelector(".project-animate-in").className = "project-dead";
-                document.querySelector(".pricing-animate-in").className = "pricing-dead";
-                document.querySelector('.skills-dead').className = "skills-animate-in";
-                }
+            document.querySelector('.style-skills').style.display = "block";
+            document.querySelector(".style-about").style.display = "none";
+            document.querySelector(".style-projects").style.display = "none";
+            document.querySelector(".style-services").style.display = "none";
             
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -94,24 +90,20 @@
         
 
         function projects() {
-            if (skillsVar.className === "skills-dead") {
-                document.querySelector(".about-animate-in").className = "about-dead";
-                document.querySelector(".project-animate-in").className = "project-dead";
-                document.querySelector(".pricing-animate-in").className = "pricing-dead";
-                document.querySelector('.skills-dead').className = "skills-animate-in";
-                }
+            document.querySelector('.style-projects').style.display = "block";
+            document.querySelector(".style-skills").style.display = "none";
+            document.querySelector(".style-about").style.display = "none";
+            document.querySelector(".style-services").style.display = "none";
             
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
 
         function services() {
-            if (skillsVar.className === "skills-dead") {
-                document.querySelector(".about-animate-in").className = "about-dead";
-                document.querySelector(".project-animate-in").className = "project-dead";
-                document.querySelector(".pricing-animate-in").className = "pricing-dead";
-                document.querySelector('.skills-dead').className = "skills-animate-in";
-                }
+            document.querySelector('.style-services').style.display = "block";
+            document.querySelector(".style-about").style.display = "none";
+            document.querySelector(".style-projects").style.display = "none";
+            document.querySelector(".style-skills").style.display = "none";
             
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -166,13 +158,13 @@
                             
                             <div class="nav-buttons">
                               
-                               <button class="button list-bubble" onclick="about()">About &#10095;</button>
+                               <button class="button list-bubble" onclick="about()">Home</button>
                                
-                                <button class="button list-bubble" onclick="skills()">Skills &#10095;</button>
+                                <button class="button list-bubble" onclick="skills()">Skills</button>
                                
-                                <button class="button list-bubble" onclick="projects()">Projects &#10095;</button>
+                                <button class="button list-bubble" onclick="projects()">Projects</button>
                                 
-                                <button class="button list-bubble" onclick="services()">Services &#10095;</button>
+                                <button class="button list-bubble" onclick="services()">Services</button>
                                 
                             </div>
                         </div>
@@ -193,15 +185,15 @@
                     <!-- ////////////////////// ABOUT ////////////////////// -->
                     
                     <div class="section-one">
-                        <div class="about-animate-in" id="about">
+                        <div class="about-animate-in style-about" id="about">
                             <div class="about-blurb"> 
                                 <img class="portrait original-pic" src="images/web-developer.jpg" alt="Sara Prescott, Web Developer">
-                                <img class="portrait muted-pic" src="images/muted.png" alt="Sara Prescott, Web Developer">
-                                <img class="portrait night-pic" src="images/night.png" alt="Sara Prescott, Web Developer">
-                                <img class="portrait teal-pic" src="images/teal.png" alt="Sara Prescott, Web Developer">
-                                <img class="portrait beach-pic" src="images/beach.png" alt="Sara Prescott, Web Developer">
+                                <img class="portrait muted-pic" src="images/muted-web-developer.png" alt="Sara Prescott, Web Developer">
+                                <img class="portrait night-pic" src="images/night-web-developer.png" alt="Sara Prescott, Web Developer">
+                                <img class="portrait teal-pic" src="images/teal-web-developer.png" alt="Sara Prescott, Web Developer">
+                                <img class="portrait beach-pic" src="images/beach-web-developer.png" alt="Sara Prescott, Web Developer">
                                 <div class="blurb-about">
-                                    <h2 class="intro-h">A bit about me...</h2>
+                                    <h2 class="intro-h">A bit about me</h2>
                                     <h3 class="sub-h">I'm a web developer based in Akron, Ohio. All my life I have had a deep and abiding love of technology. Now, I want to make beautiful, responsive websites for you.
                                     <br><br>
                                     Currently, I spend my time building websites on a freelance basis, while also studying new technologies every day. 
@@ -217,8 +209,8 @@
                         
                         <!-- ////////////////////// SKILLS ////////////////////// -->
                         
-                        <div class="skills-dead" id="skills">
-                            <h2 class="intro-h">Some of my skills...</h2>
+                        <div class="skills-dead style-skills" id="skills">
+                            <h2 class="intro-h">Some of my skills</h2>
                             <div class="skills-blurb">
                                 <h3 class="sub-h">In web development, I am currently proficient with:</h3>
                                 <div class="skills-block">
@@ -232,12 +224,12 @@
                                         <p class="item">Javascript</p>
                                     </div>
                                 </div>
-                                <h3 class="sub-h h-center">My career path has created for me opportunities to gain amazing skills both in and out of the tech world. Some of the skills and qualities that set me apart are:</h3>
+                                <h3 class="sub-h h-center">My career path has created opportunities for me to gain amazing skills both in and out of the tech world. Some of the skills and qualities that set me apart are:</h3>
                                 <dl> 
                                    <dt class="list-title"><strong>Excellent Client Support</strong></dt>
                                     <dd class="list">Making people happy is my natural state, so giving you the best support possible comes easy to me. I don't just want to make amazing websites, I also want to make sure the process is fun, friendly, and easy for all my clients. </dd> 
                                     <dt class="list-title"><strong>Organizational Proficiency</strong></dt>
-                                    <dd class="list">Prior to discovering my love for web development, I found a special love for restructuring, reorganizing, and creating best practices for disorganized small businesses in order to help them thrive and grow. The businesses I worked with went on to become remarkably successful, due largely to these skills. As such, I am a very well organized person</dd> 
+                                    <dd class="list">Prior to discovering my love for web development, I found a special love for restructuring, reorganizing, and creating best practices for disorganized small businesses in order to help them thrive and grow. The businesses I worked with went on to become remarkably successful, due largely to these skills. As such, I am a very well organized person.</dd> 
                                     <dt class="list-title"><strong>On Task Time Management</strong></dt>
                                     <dd class="list">The value of time well spent is incalculable. As such, I understand how important your time is and I put a high priority on not wasting any of my clients time. I believe strongly in making and keeping realistic time tables during the development process. </dd>
                                 </dl>
@@ -249,9 +241,9 @@
                         
                         <!-- ////////////////////// PROJECTS ////////////////////// -->
                         
-                        <div class="projects-dead" id="projects">
+                        <div class="projects-dead style-projects" id="projects">
                            <div class="projects-block">
-                               <h2 class="intro-h">Some of my projects so far...</h2>
+                               <h2 class="intro-h">Some of my projects so far</h2>
                                <h3 class="sub-h h-center">It has been a great experience designing, building, and maintaining these websites. Some of these I built for businesses, some for friends and family, and some just for fun and practice. The one I am most proud of is the website I designed, built, and donated to a local non-profit.
                                <br>
                                <br> I've included some of my much older practice sites in this list, because I think it's important to showcase how skills grow and change over time. </h3>
@@ -262,12 +254,12 @@
 
 
                                 <div class="portfolio">
-                                    <a href="http://www.buyyak.com" target="_blank"><img class="gallery img-one" onmouseover="bigImgOne()" src="images/portfolio/yak.png" alt="Buy Yak"/></a>
-                                    <a href="http://www.sequelglass.com" target="_blank"><img class="gallery img-two" onmouseover="bigImgTwo()" src="images/portfolio/sg.png" alt="Sequel Glass"/></a>
-                                    <a href="https://srprescott.github.io/Pet-Rescue/index.html"><img class="gallery img-three" onmouseover="bigImgThree()" src="images/portfolio/pet-rescue.png" alt="Pet Rescue"></a>
-                                    <a href="http://www.reverepowerpackprogram.com" target="_blank"><img class="gallery img-four" onmouseover="bigImgFour()" src="images/portfolio/rppp.png" alt="Revere Power Pack Program" /></a>
-                                    <a href="https://srprescott.github.io/Florist-Shop/index.html" target="_blank"><img class="gallery img-five" onmouseover="bigImgFive()" src="images/portfolio/flower-shop.png" alt="Florist Shop" /></a>
-                                    <a href="http://www.rachelsbabyshower.xyz" target="_blank"><img class="gallery img-six" onmouseover="bigImgSix()" src="images/portfolio/rs.png" alt="Baby Shower" /></a>
+                                    <a href="http://www.buyyak.com" target="_blank"><img class="gallery img-one" onmouseover="bigImgOne()" src="images/portfolio/yak.png" alt="Buy Yak - Responsive Website Portfolio"/></a>
+                                    <a href="http://www.sequelglass.com" target="_blank"><img class="gallery img-two" onmouseover="bigImgTwo()" src="images/portfolio/sg.png" alt="Sequel Glass - Responsive Website Portfolio"/></a>
+                                    <a href="https://srprescott.github.io/Pet-Rescue/index.html"><img class="gallery img-three" onmouseover="bigImgThree()" src="images/portfolio/pet-rescue.png" alt="Pet Rescue - Responsive Website Portfolio"></a>
+                                    <a href="http://www.reverepowerpackprogram.com" target="_blank"><img class="gallery img-four" onmouseover="bigImgFour()" src="images/portfolio/rppp.png" alt="Revere Power Pack Program - Responsive Website Portfolio" /></a>
+                                    <a href="https://srprescott.github.io/Florist-Shop/index.html" target="_blank"><img class="gallery img-five" onmouseover="bigImgFive()" src="images/portfolio/flower-shop.png" alt="Florist Shop - Responsive Website Portfolio" /></a>
+                                    <a href="http://www.rachelsbabyshower.xyz" target="_blank"><img class="gallery img-six" onmouseover="bigImgSix()" src="images/portfolio/rs.png" alt="Baby Shower - Responsive Website Portfolio" /></a>
 
                                 </div>
 
@@ -279,7 +271,7 @@
                         
                         <!-- ////////////////////// PRICING ////////////////////// -->
                         
-                        <div class="services-dead" id="services">
+                        <div class="services-dead style-services" id="services">
                             <div class="pricing-blurb">
                                 <h2 class="intro-h">Pricing Structure</h2>
                                 <h3 class="sub-h">Websites creation is priced at a flat rate. The rate will depend on some very important factors, including (but not limited to):</h3>
@@ -354,6 +346,7 @@
                         <div class="social-blurb foot-blurb">
                             <h4>Follow</h4>
                             <div class="social-buttons">
+                                <a href="https://www.facebook.com/PrescottWebDevelopment/"><i class="fab fa-facebook-square fa-lg"></i></a>
                                 <a href="https://www.freecodecamp.com/srprescott"><i class="fab fa-free-code-camp fa-lg"></i></a>
                                 <a href="https://github.com/srprescott"><i class="fab fa-github fa-lg"></i></a>
                                 <a href="https://codepen.io/srprescott/#"><i class="fab fa-codepen fa-lg"></i></a>

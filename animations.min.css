@@ -30,22 +30,36 @@
 
 @-webkit-keyframes back {
     0% {
-        left:-2px;
+        left:0;
     }
     25% {
         left: 2px;
     }
-}
-@keyframes back {
-    0% {
-        left:-2px;
+    75% {
+        left:0;
     }
-    25% {
+    100% {
         left: 2px;
     }
 }
 
-.button:hover {
-  -webkit-animation: back .5 infinite;
+@keyframes back {
+    0% {
+        left:0;
+    }
+    25% {
+        left: 10px;
+    }
+    75% {
+        left:0;
+    }
+    100% {
+        left: 10px;
+    }
+}
+
+.bubble:hover {
+    -webkit-animation: back .5 infinite;
+    animation:  back .5 infinite;
 }
 
